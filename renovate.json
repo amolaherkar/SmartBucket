@@ -3,7 +3,9 @@
   "extends": [
     "config:base",
 	  ":rebaseStalePrs",
-	  ":enableVulnerabilityAlerts"
+	  ":enableVulnerabilityAlerts",
+	  ":enableVulnerabilityAlertsWithLabel('security')", 
+	  "group:recommended" 
   ],
   "transitiveRemediation": true,
   "recreateClosed": true
